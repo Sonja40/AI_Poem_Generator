@@ -5,3 +5,8 @@ body {
 h1 {
     color: blueviolet;
 }
+
+footer {
+    text-align: center;
+    color: aquamarine;
+}
