@@ -3,9 +3,7 @@ function generatePoem(event) {
 
     let poemConatiner =document.querySelector("#poem")
     poemConatiner. innerHTML = 
-    "An old silent poond
-    A frog jumps into the pond—
-    Splash! Silence again.";
+    "An old silent pond, A frog jumps into the pond. Splash! Silence again" ;
 }
 
 
