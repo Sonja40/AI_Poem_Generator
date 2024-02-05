@@ -8,3 +8,9 @@ h1 {
     line-height: 1.5;
     color: #272044;
 }
+
+.container {
+    margin: 120px auto;
+    max-width: 600px;
+    
+}
