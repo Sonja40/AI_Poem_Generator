@@ -24,7 +24,7 @@ function generatePoem(event) {
     
     let haikuElement = document.querySelector("#poem");
     haikuElement.classList.remove("hidden");
-    haikuElement.innerHTML = `<div class="blink">⏳Generating a Haiku about ${instrctionsInput.value}</div>`;
+    haikuElement.innerHTML = `<div class="generating">⏳Generating a Haiku about ${instrctionsInput.value}</div>`;
 
     console.log("Generating poem");
     console.log(`Prompt: ${prompt}`);
