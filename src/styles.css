@@ -32,13 +32,23 @@ h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-form {
-    padding: 30px;
+.form-container {
     background-color: white;
-    border-radius: 10px;
-    display: flex;
-    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0,08);
     margin-bottom: 30px;
+    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0,08);
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.example {
+    line-height: 1.5;
+    margin-top: 8px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+form {
+    display: flex;
 }
 
 .instructions {
