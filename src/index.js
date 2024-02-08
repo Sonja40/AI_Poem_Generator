@@ -22,6 +22,9 @@ function generatePoem(event) {
     let prompt = `User instrustions are: Generate short Haiku about ${instrctionsInput.value}` ;
     let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
     
+    let haikuElement = document.querySelector("#poem");
+    haikuElement.classList.remove("hidden");
+
     console.log("Generating poem");
     console.log(`Prompt: ${prompt}`);
     console.log(`Context: ${context}`);
