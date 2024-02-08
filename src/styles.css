@@ -27,6 +27,11 @@ h1 {
     color: #272044;
 }
 
+h3 {
+    color: #885df1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 form {
     padding: 30px;
     background-color: white;
