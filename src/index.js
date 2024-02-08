@@ -15,9 +15,9 @@ function generatePoem(event) {
     event.preventDefault()
 
     let instrctionsInput = document.querySelector("#user-instructions");
-    let apiKey = "2046c535afeb092fo82f1d306d8a2b2t";
+    let apiKey = "8429fab9a373o690ete5fa53ee0a6e14";
     let prompt = `User instrustions: Generate short Haiku Poems about ${instrctionsInput.value}` ;
-    let context = "You are a romatic Poem expert and love to write short Poems. Your mission is to generate a 2 line poem in basic HTML. Make sure to follow the User instructions.";
+    let context = "You are a romatic Haiku Poem expert and love to write short Haiku Poems. Your mission is to generate a 2 line Haiku poem in basic HTML. Make sure to follow the User instrustions.";
     let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
     
     console.log("Generating poem");
@@ -34,4 +34,4 @@ poemFormElment.addEventListener("submit", generatePoem);
 
 
 
-"An old silent pond, A frog jumps into the pond. Splash! Silence again." 
+//"An old silent pond, A frog jumps into the pond. Splash! Silence again." 
