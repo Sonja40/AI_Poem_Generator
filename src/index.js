@@ -1,4 +1,7 @@
 function displayPoem(response) {
+
+  console.log("poem generated");
+
   new Typewriter('#poem', {
     strings: response.data.answer,
     autoStart: true,
@@ -11,17 +14,17 @@ function displayPoem(response) {
 function generatePoem(event) {
     event.preventDefault()
 
+    let instrctionsInput = document.querySelector("#user-instructions");
     let apiKey = "8429fab9a373o690ete5fa53ee0a6e14";
-    let apiPrompt = "Tell me a short nice Poem";
-    let apiContext = "";
+    let prompt = `User instrustions: Generate short Haiku Poems about ${instrctionsInput.value}` ;
+    let context = "You are a romatic Poem expert and love to write short Haikus. Your mission is to generate a 2 line poem in basic HTML. Make sure to follow the User instructions.";
     let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
     
-    console.log("generating poem");
+    console.log("Generating poem");
+    console.log(`Prompt: ${prompt}`);
+    console.log(`Context: ${context}`);
 
     axios.get(apiURL).then(displayPoem);
-
-
-
 
 }
 
