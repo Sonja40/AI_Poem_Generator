@@ -20,7 +20,7 @@ function generatePoem(event) {
     let apiKey = "4efbbf43t600f8b07428238a0a4o0852";
     let context = "You are a Haiku expert and love to write short Haikus. Your mission is to generate a 4 line Haiku in basic HTML and seperate each line with a HTML <br/>. Don't add a break at the end of the last line. Don't write the first letter of each line in uppercase, but write the first letter of the first word of the poem in uppercase. Make sure to follow the user instructions";
     let prompt = `User instrustions are: Generate short Haiku about ${instrctionsInput.value}` ;
-    let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
+    let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
     
     console.log("Generating poem");
     console.log(`Prompt: ${prompt}`);
